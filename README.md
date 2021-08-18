@@ -145,7 +145,11 @@ struct TrackList {
 ```
 
 When everything looks right, run `music-sort` without the `--dry-run` option to rename
-the files and folders and write the tracklist header file.
+the files and folders and write the tracklist header file:
+
+```
+music-sort --src=/tmp/music --prefix-length-dir=26 --prefix-length-file=42
+```
 
 The resulting file tree:
 
