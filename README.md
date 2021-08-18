@@ -17,7 +17,7 @@ Clone the repository and install using `pip`:
 pip install -e .
 ```
 
-You can now use the `music-sort` command, e.g.:
+You can now use the `music-sort` command, e.g:
 
 ```console
 music-sort --help
@@ -99,10 +99,11 @@ struct TrackList {
 #endif
 ```
 
-The resulting `TrackList.h` contains a lot of unnecessary text that we don't want:
+The resulting `TrackList.h` contains unnecessary text that we don't want, like
+the first part of the:
 
-- The first part of the folder name `1. The Lord Of The Rings- `
-- The first part of the filename: `01 The Lord Of The Rings (Howard Shore) - `
+- folder name: `1. The Lord Of The Rings- `
+- filename: `01 The Lord Of The Rings (Howard Shore) - `
 
 Use the `--prefix-length-dir` and `--prefix-length-file` options for this.
 The length of the prefix in the folder name (`1. The Lord Of The Rings- `) is 26
@@ -145,3 +146,23 @@ struct TrackList {
 
 When everything looks right, run `music-sort` without the `--dry-run` option to rename
 the files and folders and write the tracklist header file.
+
+The resulting file tree:
+
+```
++-+- 01
+  |   + 001.mp3
+  |   + 002.mp3
+  |
+  +- 02
+  |   + 003.mp3
+  |   + 004.mp3
+  |   + 005.mp3
+  |
+  +- 03
+      + 006.mp3
+      + 007.mp3
+```
+
+This can be copied onto the SD-card and `TrackList.h` can be compiled into your project
+if you want to display track and album information.
