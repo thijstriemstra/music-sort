@@ -5,7 +5,7 @@ import argparse
 from pathlib import Path
 from string import Template
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 
 TRACKLIST_HEADER = """
 #ifndef TrackList_h
