@@ -77,6 +77,8 @@ This should output something like:
 #ifndef TrackList_h
 #define TrackList_h
 
+#include <vector>
+
 // THIS FILE IS AUTO-GENERATED
 
 struct TrackList {
@@ -121,6 +123,8 @@ And the resulting tracklist:
 ```cpp
 #ifndef TrackList_h
 #define TrackList_h
+
+#include <vector>
 
 // THIS FILE IS AUTO-GENERATED
 
