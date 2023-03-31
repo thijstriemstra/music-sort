@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Thijs Triemstra
+# Copyright (c) 2021-2023 Thijs Triemstra
 
 from . import run
 
