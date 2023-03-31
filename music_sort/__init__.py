@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Thijs Triemstra
+# Copyright (c) 2021-2023 Thijs Triemstra
 
 import logging
 import argparse
@@ -10,6 +10,8 @@ __version__ = '1.0.0'
 TRACKLIST_HEADER = """
 #ifndef TrackList_h
 #define TrackList_h
+
+#include <vector>
 
 // THIS FILE IS AUTO-GENERATED
 
