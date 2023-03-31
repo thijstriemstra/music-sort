@@ -1,6 +1,6 @@
 # music-sort
 
-Organize audio files and generate trackslists for Arduino serial audio players like the YX5300 and JQ6500-28P.
+Organize audio files and generate tracklists for Arduino serial audio players like the YX5300 and JQ6500-28P.
 
 ## Supported players
 
